@@ -17,15 +17,15 @@ public class Ex12 {
         if(b>a){
             for (int i=a; i <= b; i++){
                 if (i%2==0){
-                    System.out.printf("%d, ", i);
                     soma += i;
                     total++;
+                    System.out.printf("%d, ", i);
                 }
             }
             media = soma/total;
         
         System.out.println("");
-        System.out.printf("Total da soma dos pares eh: %d\n", total);
+        System.out.printf("Total da soma dos pares eh: %d\n", soma);
         System.out.printf("Media dos numeros pares eh: %.2f\n", media);
         }
         else{
