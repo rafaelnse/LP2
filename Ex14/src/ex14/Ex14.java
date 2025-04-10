@@ -6,26 +6,25 @@ public class Ex14 {
         Scanner entrada = new Scanner(System.in);
         
         int alunos=0;
-        float nota, total=0, media, menor=0, maior=0;
+        float nota, total=0, media, menor, maior=0;
         
         System.out.printf("Digite a nota: ");
             nota = entrada.nextFloat();
-            total +=nota;
-            maior=nota;
-            menor=nota;
-            alunos++;
+            menor = nota;
              
         while (nota != -1){
-            System.out.printf("Digite a nota: ");
-            nota = entrada.nextFloat();
             total +=nota;
             alunos++;
             if (nota>=maior){
                 maior = nota;
             }
-            else if (nota<=menor){
+            if (nota<=menor){
                 menor = nota;
                 }        
+            
+            System.out.printf("Digite a nota ou -1 para sair: ");
+            nota = entrada.nextFloat();
+            
         } 
         
         
